@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 // Database
 mongoose.connect(process.env.MONGODB_URI,{
   useNewUrlParser: true,
-  useFindAndModify: true,
+  useFindAndModify: false,
   useCreateIndex: true
 });
 const db = mongoose.connection;
