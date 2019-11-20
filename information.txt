@@ -1,0 +1,13 @@
+Rotas
+
+GET
+/information?nivel=1
+/driverWarning
+/event
+
+POST
+/driver
+/sensor
+/login
+/event
+
