@@ -38,10 +38,14 @@ process.on('SIGINT',() => {
 
 // Load models
 const Events = require('./models/events');
+const Drivers = require('./models/drivers');
 
 // Load routes
 const eventsRoutes = require('./routes/event-routes');
 app.use('/events',eventsRoutes);
+
+const driversRoutes = require('./routes/driver-routes');
+app.use('/drivers',driversRoutes);
 
 const indexRoutes = require('./routes/index-routes');
 app.use('/',indexRoutes);
